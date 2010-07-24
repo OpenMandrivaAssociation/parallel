@@ -1,7 +1,7 @@
 Name:		parallel
 Summary:	A shell tool for executing jobs in parallel
-Version:	20100620
-Release:	%mkrel 2
+Version:	20100722
+Release:	%mkrel 1
 License:	GPLv3
 Source0:	http://ftp.gnu.org/gnu/parallel/%{name}-%{version}.tar.bz2
 Source1:	http://ftp.gnu.org/gnu/parallel/%{name}-%{version}.tar.bz2.sig
@@ -11,7 +11,7 @@ BuildRoot:      %{_tmppath}/%{name}-%{version}-buildroot
 Requires:	perl 
 
 %description
-GNU parallel is a shell tool for executing jobs in parallel locally
+GNU parallel is a perl tool for executing jobs in parallel locally
 or using remote machines. A job is typically a single command or a small
 script that has to be run for each of the lines in the input. The typical
 input is a list of files, a list of hosts, a list of users, a list of URLs,
