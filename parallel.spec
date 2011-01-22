@@ -1,6 +1,6 @@
 Name:		parallel
 Summary:	A shell tool for executing jobs in parallel
-Version:	20101202
+Version:	20101222
 Release:	%mkrel 1
 License:	GPLv3
 Source0:	http://ftp.gnu.org/gnu/parallel/%{name}-%{version}.tar.bz2
@@ -40,3 +40,5 @@ rm -rf %{buildroot}
 %{_mandir}/man1/parallel.1.xz
 %{_mandir}/man1/sem.1.xz
 %{_mandir}/man1/sql.1.xz
+%{_bindir}/niceload
+%{_mandir}/man1/niceload.1.xz
