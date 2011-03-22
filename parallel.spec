@@ -1,7 +1,7 @@
 Name:		parallel
 Summary:	A shell tool for executing jobs in parallel
-Version:	20110205
-Release:	%mkrel 2
+Version:	20110322
+Release:	%mkrel 1
 License:	GPLv3
 Source0:	http://ftp.gnu.org/gnu/parallel/%{name}-%{version}.tar.bz2
 Source1:	http://ftp.gnu.org/gnu/parallel/%{name}-%{version}.tar.bz2.sig
@@ -28,6 +28,10 @@ make
 rm -rf %{buildroot}
 %makeinstall
 
+# (Kharec: It seems we can have a site wide config file now, so create it directly at the install) 
+mkdir -p %{buildroot}%{_sysconfdir}/%{name}
+touch %{buildroot}%{_sysconfdir}/%{name}/config
+
 %clean
 rm -rf %{buildroot}
 
@@ -41,4 +45,5 @@ rm -rf %{buildroot}
 %{_mandir}/man1/sem.1.xz
 %{_mandir}/man1/sql.1.xz
 %{_bindir}/niceload
+%{_sysconfdir}/%{name}/config
 %{_mandir}/man1/niceload.1.xz
