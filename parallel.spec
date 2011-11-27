@@ -1,14 +1,14 @@
 Name:		parallel
 Summary:	A shell tool for executing jobs in parallel
-Version:	20110622
+Version:	20111122
 Release:	%mkrel 1
 License:	GPLv3
 Source0:	http://ftp.gnu.org/gnu/parallel/%{name}-%{version}.tar.bz2
 Source1:	http://ftp.gnu.org/gnu/parallel/%{name}-%{version}.tar.bz2.sig
 URL:		http://www.gnu.org/software/parallel/
 Group:		File tools
-BuildRoot:      %{_tmppath}/%{name}-%{version}-buildroot
-Requires:	perl 
+BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
+Requires:	perl
 
 %description
 GNU parallel is a shell tool for executing jobs in parallel locally
@@ -36,8 +36,8 @@ touch %{buildroot}%{_sysconfdir}/%{name}/config
 rm -rf %{buildroot}
 
 %files
-%defattr(-,root,root) 
-%doc README NEWS 
+%defattr(-,root,root)
+%doc README NEWS
 %{_bindir}/parallel
 %{_bindir}/sem
 %{_bindir}/sql
