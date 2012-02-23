@@ -1,8 +1,8 @@
 Name:		parallel
 Summary:	A shell tool for executing jobs in parallel
-Version:	20120122
+Version:	20120222
 Release:	%mkrel 1
-License:	GPLv3
+License:	GPLv3+
 Source0:	http://ftp.gnu.org/gnu/parallel/%{name}-%{version}.tar.bz2
 Source1:	http://ftp.gnu.org/gnu/parallel/%{name}-%{version}.tar.bz2.sig
 URL:		http://www.gnu.org/software/parallel/
