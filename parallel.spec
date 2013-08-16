@@ -1,10 +1,10 @@
-Name:		parallel
 Summary:	A shell tool for executing jobs in parallel
+Name:		parallel
 Version:	20121122
 Release:	1
 License:	GPLv3+
 Group:		File tools
-URL:		http://www.gnu.org/software/parallel/
+Url:		http://www.gnu.org/software/parallel/
 Source0:	http://ftp.gnu.org/gnu/parallel/%{name}-%{version}.tar.bz2
 Source1:	http://ftp.gnu.org/gnu/parallel/%{name}-%{version}.tar.bz2.sig
 BuildArch:	noarch
@@ -33,6 +33,7 @@ touch %{buildroot}%{_sysconfdir}/%{name}/config
 
 %files
 %doc README NEWS
+%config(noreplace) %{_sysconfdir}/%{name}/config
 %{_bindir}/parallel
 %{_bindir}/sem
 %{_bindir}/sql
@@ -40,6 +41,5 @@ touch %{buildroot}%{_sysconfdir}/%{name}/config
 %{_mandir}/man1/sem.1*
 %{_mandir}/man1/sql.1*
 %{_bindir}/niceload
-%config(noreplace) %{_sysconfdir}/%{name}/config
 %{_mandir}/man1/niceload.1*
 
