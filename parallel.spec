@@ -1,7 +1,7 @@
 Name:		parallel
 Summary:	A shell tool for executing jobs in parallel
 Version:	20121122
-Release:	1
+Release:	2
 License:	GPLv3+
 Group:		File tools
 URL:		http://www.gnu.org/software/parallel/
