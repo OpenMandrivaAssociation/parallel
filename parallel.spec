@@ -1,12 +1,11 @@
 Summary:	A shell tool for executing jobs in parallel
 Name:		parallel
-Version:	20140122
-Release:	3
+Version:	20150222
+Release:	1
 License:	GPLv3+
 Group:		File tools
 Url:		http://www.gnu.org/software/parallel/
 Source0:	http://ftp.gnu.org/gnu/parallel/%{name}-%{version}.tar.bz2
-Source1:	http://ftp.gnu.org/gnu/parallel/%{name}-%{version}.tar.bz2.sig
 Requires:	perl
 BuildArch:	noarch
 
@@ -36,8 +35,8 @@ or a list of tables.
 %setup -q
 
 %build
-%configure2_5x
-make
+%configure
+%make
 
 %install
 %makeinstall_std
