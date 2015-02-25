@@ -28,6 +28,8 @@ or a list of tables.
 %{_bindir}/niceload
 %config(noreplace) %{_sysconfdir}/%{name}/config
 %{_mandir}/man1/niceload.1*
+%{_mandir}/man7/parallel_design.7.*
+%{_mandir}/man7/parallel_tutorial.7.*
 
 #----------------------------------------------------------------------------
 
