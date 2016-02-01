@@ -1,14 +1,13 @@
-Name:		parallel
 Summary:	A shell tool for executing jobs in parallel
-Version:	20121122
-Release:	2
+Name:		parallel
+Version:	20150822
+Release:	0.1
 License:	GPLv3+
 Group:		File tools
-URL:		http://www.gnu.org/software/parallel/
+Url:		http://www.gnu.org/software/parallel/
 Source0:	http://ftp.gnu.org/gnu/parallel/%{name}-%{version}.tar.bz2
-Source1:	http://ftp.gnu.org/gnu/parallel/%{name}-%{version}.tar.bz2.sig
-BuildArch:	noarch
 Requires:	perl
+BuildArch:	noarch
 
 %description
 GNU parallel is a shell tool for executing jobs in parallel locally
@@ -16,20 +15,6 @@ or using remote machines. A job is typically a single command or a small
 script that has to be run for each of the lines in the input. The typical
 input is a list of files, a list of hosts, a list of users, a list of URLs,
 or a list of tables.
-
-%prep
-%setup -q
-
-%build
-%configure2_5x
-make
-
-%install
-%makeinstall_std
-
-# (Kharec: It seems we can have a site wide config file now, so create it directly at the install) 
-mkdir -p %{buildroot}%{_sysconfdir}/%{name}
-touch %{buildroot}%{_sysconfdir}/%{name}/config
 
 %files
 %doc README NEWS
@@ -42,4 +27,22 @@ touch %{buildroot}%{_sysconfdir}/%{name}/config
 %{_bindir}/niceload
 %config(noreplace) %{_sysconfdir}/%{name}/config
 %{_mandir}/man1/niceload.1*
+%{_mandir}/man7/parallel_design.7.*
+%{_mandir}/man7/parallel_tutorial.7.*
+
+#----------------------------------------------------------------------------
+
+%prep
+%setup -q
+
+%build
+%configure
+%make
+
+%install
+%makeinstall_std
+
+# (Kharec: It seems we can have a site wide config file now, so create it directly at the install) 
+mkdir -p %{buildroot}%{_sysconfdir}/%{name}
+touch %{buildroot}%{_sysconfdir}/%{name}/config
 
