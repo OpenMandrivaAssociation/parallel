@@ -1,6 +1,6 @@
 Summary:	A shell tool for executing jobs in parallel
 Name:		parallel
-Version:	20150822
+Version:	20160322
 Release:	1
 License:	GPLv3+
 Group:		File tools
@@ -45,4 +45,3 @@ or a list of tables.
 # (Kharec: It seems we can have a site wide config file now, so create it directly at the install) 
 mkdir -p %{buildroot}%{_sysconfdir}/%{name}
 touch %{buildroot}%{_sysconfdir}/%{name}/config
-
