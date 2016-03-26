@@ -21,11 +21,13 @@ or a list of tables.
 %{_bindir}/parallel
 %{_bindir}/sem
 %{_bindir}/sql
+%{_bindir}/env_parallel*
 %{_mandir}/man1/parallel.1*
 %{_mandir}/man1/sem.1*
 %{_mandir}/man1/sql.1*
 %{_bindir}/niceload
 %config(noreplace) %{_sysconfdir}/%{name}/config
+%{_mandir}/man1/env_parallel.1.*
 %{_mandir}/man1/niceload.1*
 %{_mandir}/man7/parallel_design.7.*
 %{_mandir}/man7/parallel_tutorial.7.*
