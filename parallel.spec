@@ -7,6 +7,8 @@ Group:		File tools
 Url:		http://www.gnu.org/software/parallel/
 Source0:	http://ftp.gnu.org/gnu/parallel/%{name}-%{version}.tar.bz2
 Requires:	perl
+Requires: fish
+Requires: pdksh
 BuildArch:	noarch
 
 %description
