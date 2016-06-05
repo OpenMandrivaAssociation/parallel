@@ -1,7 +1,9 @@
+%define __noautoreq '/bin/csh|/usr/bin/fish|/usr/bin/ksh|/usr/bin/zsh|/bin/pdksh'
+
 Summary:	A shell tool for executing jobs in parallel
 Name:		parallel
 Version:	20160522
-Release:	2
+Release:	3
 License:	GPLv3+
 Group:		File tools
 Url:		http://www.gnu.org/software/parallel/
