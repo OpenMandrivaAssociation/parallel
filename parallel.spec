@@ -20,6 +20,7 @@ or a list of tables.
 
 %files
 %doc README NEWS
+%doc %{_docdir}/%{name}
 %{_bindir}/parallel
 %{_bindir}/sem
 %{_bindir}/sql
@@ -37,14 +38,14 @@ or a list of tables.
 #----------------------------------------------------------------------------
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 %configure
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 # (Kharec: It seems we can have a site wide config file now, so create it directly at the install) 
 mkdir -p %{buildroot}%{_sysconfdir}/%{name}
