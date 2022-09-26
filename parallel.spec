@@ -2,7 +2,7 @@
 
 Summary:	A shell tool for executing jobs in parallel
 Name:		parallel
-Version:	20201122
+Version:	20220922
 Release:	1
 License:	GPLv3+
 Group:		File tools
@@ -19,12 +19,13 @@ input is a list of files, a list of hosts, a list of users, a list of URLs,
 or a list of tables.
 
 %files
-%doc README NEWS
 %doc %{_docdir}/%{name}
 %config(noreplace) %{_sysconfdir}/%{name}/config
+%{_datadir}/bash-completion/completions/parallel
+%{_datadir}/zsh/site-functions/_parallel
 %{_bindir}/*
 %{_mandir}/man1/*.1*
-%{_mandir}/man7/*.7.*
+%{_mandir}/man7/*.7*
 
 #----------------------------------------------------------------------------
 
