@@ -6,7 +6,7 @@ Version:	20240922
 Release:	1
 License:	GPLv3+
 Group:		File tools
-Url:		http://www.gnu.org/software/parallel/
+Url:		https://www.gnu.org/software/parallel/
 Source0:	http://ftp.gnu.org/gnu/parallel/%{name}-%{version}.tar.bz2
 Requires:	perl
 BuildArch:	noarch
