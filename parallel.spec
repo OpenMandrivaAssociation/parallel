@@ -2,7 +2,7 @@
 
 Summary:	A shell tool for executing jobs in parallel
 Name:		parallel
-Version:	20250422
+Version:	20250522
 Release:	1
 License:	GPLv3+
 Group:		File tools
