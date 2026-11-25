@@ -1,4 +1,7 @@
 %global __requires_exclude /usr/bin/ksh|/bin/pdksh|/usr/bin/zsh|/usr/bin/fish|/bin/csh|/bin/tcsh|tcsh|mksh
+# The release tarball ships configure. %configure would rerun aclocal
+# because configure.ac and Makefile.am exist. Nothing here uses libtool.
+%global _disable_rebuild_configure 1
 
 Summary:	A shell tool for executing jobs in parallel
 Name:		parallel
