@@ -2,7 +2,7 @@
 
 Summary:	A shell tool for executing jobs in parallel
 Name:		parallel
-Version:	20260722
+Version:	20261122
 Release:	1
 License:	GPLv3+
 Group:		File tools
@@ -11,10 +11,7 @@ Source0:	http://ftp.gnu.org/gnu/parallel/%{name}-%{version}.tar.bz2
 Requires:	perl
 BuildArch:	noarch
 
-BuildRequires:	autoconf
-BuildRequires:	automake
-BuildRequires:	libtool-base
-BuildRequires:	slibtool
+# The release tarball ships configure. Nothing here uses libtool.
 BuildRequires:	make
 %description
 GNU parallel is a shell tool for executing jobs in parallel locally
